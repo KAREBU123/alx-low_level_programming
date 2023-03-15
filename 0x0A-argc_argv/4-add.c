@@ -54,7 +54,7 @@ else
 printf("Error\n");
 return (1);
 }
-count++
+count++;
 }
 printf("%d\n", sum); /*print sum*/
 return (0);
