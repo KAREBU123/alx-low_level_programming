@@ -5,11 +5,12 @@
  * count_word - helper function to count the number of words in a string
  * @s: string to evaluate
  *
- * Return: number of words
+ * eturn: number of words
  */
 
 int count_word(char *s)
 {
+
 	int flag, c, w;
 
 	flag = 0;
@@ -26,12 +27,12 @@ int count_word(char *s)
 			w++;
 		}
 	}
-return (w);
+	return (w);
 }
 
 /**
  * **strtow - splits a string into words
- * @str: string to split
+ * @str: string to spli
  *
  * Return: pointer to an array of strings (Success)
  * or NULL (Error)
@@ -39,7 +40,6 @@ return (w);
 
 char **strtow(char *str)
 {
-
 	char **matrix, *tmp;
 	int i, k = 0, len = 0, words, c = 0, start, end;
 
@@ -66,6 +66,7 @@ char **strtow(char *str)
 				tmp = (char *) malloc(sizeof(char) * (c + 1));
 
 				if (tmp == NULL)
+
 					return (NULL);
 
 				while (start < end)
@@ -77,14 +78,11 @@ char **strtow(char *str)
 				c = 0;
 			}
 		}
-
-		else if (c++ == 0)
-		{
-			start = i;
-		}
-	}
-
-	matrix[k] = NULL;
-
-	return (matrix);
+else if (c++ == 0)
+{
+start = i;
+}
+}
+matrix[k] = NULL;
+return (matrix);
 }
